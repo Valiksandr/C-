@@ -6,21 +6,9 @@ Console.Write("Красава! А теперь второе число: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Отлично! А теперь третье число: ");
 int l = Convert.ToInt32(Console.ReadLine());
-if (n == m)
-    Console.WriteLine("Ошибка! Есть 2 одинаковых числа!");
-if (n == l)
-    Console.WriteLine("Ошибка! Есть 2 одинаковых числа!");
-if (m == l)   
-    Console.WriteLine("Ошибка! Есть 2 одинаковых числа!");
-if (n > m ) 
-    if (n >l)
-    Console.WriteLine($"{n} больше всех!");
-if (n < m ) 
-    if (m > l)
-    Console.WriteLine($"{m} больше всех!");
-if (m < l) 
-    if (n < l)
-    Console.WriteLine($"{l} больше всех!");
-if (n == m)
-    if (m == l)
-    Console.WriteLine("Иди в пень. Числа равны!");
+int max = n;
+if (max < m)
+    max = m;
+if (max < l) 
+    max = l;
+Console.WriteLine($"{max} больше всех!");
