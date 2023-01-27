@@ -1,11 +1,17 @@
 Console.Clear();
 
-Console.Write("Бонжур. Введи 3 числа и я определю, какое больше. Первое число: ");
+Console.Write("Бонжур. Введи 3 разных числа и я определю, какое больше. Первое число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.Write("Красава! А теперь второе число: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Отлично! А теперь третье число: ");
 int l = Convert.ToInt32(Console.ReadLine());
+if (n == m)
+    Console.WriteLine("Ошибка! Есть 2 одинаковых числа!");
+if (n == l)
+    Console.WriteLine("Ошибка! Есть 2 одинаковых числа!");
+if (m == l)   
+    Console.WriteLine("Ошибка! Есть 2 одинаковых числа!");
 if (n > m ) 
     if (n >l)
     Console.WriteLine($"{n} больше всех!");
