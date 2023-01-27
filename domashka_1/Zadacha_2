@@ -1,14 +1,12 @@
 Console.Clear();
 
-Console.Write("Бонжур. Введи 3 разных числа и я определю, какое больше. Первое число: ");
+Console.Write("Бонжур. Введи 2 числа и я определю, какое больше. Первое число: ");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Красава! А теперь второе число: ");
+Console.Write("Красава! А теперь 2-ое число: ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Отлично! А теперь третье число: ");
-int l = Convert.ToInt32(Console.ReadLine());
-int max = n;
-if (max < m)
-    max = m;
-if (max < l) 
-    max = l;
-Console.WriteLine($"{max} больше всех!");
+if (n > m ) 
+    Console.WriteLine($"{n} больше чем {m}");
+else if (n < m ) 
+    Console.WriteLine($"{m} больше чем {n}");
+else
+    Console.WriteLine("Иди в пень. Числа равны!");
