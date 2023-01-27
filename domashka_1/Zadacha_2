@@ -1,0 +1,20 @@
+Console.Clear();
+
+Console.Write("Бонжур. Введи 3 числа и я определю, какое больше. Первое число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Красава! А теперь второе число: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Отлично! А теперь третье число: ");
+int l = Convert.ToInt32(Console.ReadLine());
+if (n > m ) 
+    if (n >l)
+    Console.WriteLine($"{n} больше всех!");
+if (n < m ) 
+    if (m > l)
+    Console.WriteLine($"{m} больше всех!");
+if (m < l) 
+    if (n < l)
+    Console.WriteLine($"{l} больше всех!");
+if (n == m)
+    if (m == l)
+    Console.WriteLine("Иди в пень. Числа равны!");
