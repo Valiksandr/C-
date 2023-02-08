@@ -14,7 +14,11 @@ for (int i = 0; i < array.Length; i++)
     if (array[i] == x)
         count = count + 1;
 
-if (count < 2 || count > 4)
+if (count == 0)
+    Console.WriteLine($"Цифра {x} в этом массиве не встречается");
+    
+else 
+    if (count < 2 || count > 4)
     Console.WriteLine($"Цифра {x} встречается {count} раз");
-else if (count > 1 & count < 4)
+    else if (count > 1 & count < 4)
     Console.WriteLine($"Цифра {x} встречается {count} раза");
