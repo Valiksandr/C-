@@ -6,7 +6,7 @@ Console.WriteLine("Задайте количество столбцов масс
 int m = Convert.ToInt32(Console.ReadLine());
 int[,] matrix = new int[n, m];
 
-void FillArray(int[,] matrix)
+void FillArray(Int32[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {

@@ -10,7 +10,7 @@ void FillArray(Int32[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(0); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         { matrix[i, j] = Convert.ToInt32(new Random().Next(0, 101)); }
     }
 }
@@ -36,5 +36,5 @@ int y = Convert.ToInt32(Console.ReadLine());
 
 if (x > n || y > m)
     Console.WriteLine("Такого значения нет в массиве.");
-    
+else 
 Console.WriteLine($"Ваша цифра:{matrix[x-1, y-1 ]}");
